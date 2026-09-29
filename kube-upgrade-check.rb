@@ -5,21 +5,21 @@
 class KubeUpgradeCheck < Formula
   desc "Find what breaks before you upgrade Kubernetes"
   homepage "https://github.com/runtimez-com/kube-upgrade-check"
-  version "0.1.4"
+  version "0.1.5"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/runtimez-com/kube-upgrade-check/releases/download/v0.1.4/kube-upgrade-check_0.1.4_darwin_amd64.tar.gz"
-      sha256 "f2e53e1c89b8d65ab9b5d450df7c7d5a6bb70fda3da404606a1b5214327a79cc"
+      url "https://github.com/runtimez-com/kube-upgrade-check/releases/download/v0.1.5/kube-upgrade-check_0.1.5_darwin_amd64.tar.gz"
+      sha256 "7f1ffd8910cad2e9efa9eff6be16ca0065629200678286d2294914a3e130ee56"
 
       def install
         bin.install "kube-upgrade-check"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/runtimez-com/kube-upgrade-check/releases/download/v0.1.4/kube-upgrade-check_0.1.4_darwin_arm64.tar.gz"
-      sha256 "9cb70dcfeab430fa55245b334b5cebab8920454632548dee343495d8d9e32b95"
+      url "https://github.com/runtimez-com/kube-upgrade-check/releases/download/v0.1.5/kube-upgrade-check_0.1.5_darwin_arm64.tar.gz"
+      sha256 "7828b02b0a6a28090dc32d587cbb91f461a1c51d0c2b5cd331229402b977b827"
 
       def install
         bin.install "kube-upgrade-check"
@@ -30,8 +30,8 @@ class KubeUpgradeCheck < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/runtimez-com/kube-upgrade-check/releases/download/v0.1.4/kube-upgrade-check_0.1.4_linux_amd64.tar.gz"
-        sha256 "937a15804d365a6c1393e088690f3c2900324f348f17c31255c896282f974647"
+        url "https://github.com/runtimez-com/kube-upgrade-check/releases/download/v0.1.5/kube-upgrade-check_0.1.5_linux_amd64.tar.gz"
+        sha256 "86fe65711d8569780f5f1437827be17f5f76ac17d064cc13e7a131ee353a9449"
 
         def install
           bin.install "kube-upgrade-check"
@@ -40,8 +40,8 @@ class KubeUpgradeCheck < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/runtimez-com/kube-upgrade-check/releases/download/v0.1.4/kube-upgrade-check_0.1.4_linux_arm64.tar.gz"
-        sha256 "591e2c8e61e51cf7823ad14d1cf9029fd6d0e558946515fe6bd21bca3cf58860"
+        url "https://github.com/runtimez-com/kube-upgrade-check/releases/download/v0.1.5/kube-upgrade-check_0.1.5_linux_arm64.tar.gz"
+        sha256 "21161a0ddea72f38cffb08da03af57587eb90c224c38305366ad4f0ce86957e1"
 
         def install
           bin.install "kube-upgrade-check"
