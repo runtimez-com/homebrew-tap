@@ -5,21 +5,21 @@
 class Rtz < Formula
   desc "Operate and troubleshoot Kubernetes from the runtimez control plane"
   homepage "https://github.com/runtimez-com/runtimez-cli"
-  version "0.1.2"
+  version "0.2.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/runtimez-com/runtimez-cli/releases/download/v0.1.2/rtz_0.1.2_darwin_amd64.tar.gz"
-      sha256 "5745aed350c77fa611c3a73063f06c8720ac1eafd370f1d6ebba27ecbc039680"
+      url "https://github.com/runtimez-com/runtimez-cli/releases/download/v0.2.0/rtz_0.2.0_darwin_amd64.tar.gz"
+      sha256 "e622a11b53bfab0ed479ca10cf50bf73467bb38f05022d994916c94325f80ad4"
 
       def install
         bin.install "rtz"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/runtimez-com/runtimez-cli/releases/download/v0.1.2/rtz_0.1.2_darwin_arm64.tar.gz"
-      sha256 "a09c55d4d9d83411a96cd849f56959d06b49a9edb5b82db1eefa20aaf71b8ff4"
+      url "https://github.com/runtimez-com/runtimez-cli/releases/download/v0.2.0/rtz_0.2.0_darwin_arm64.tar.gz"
+      sha256 "50a6e851ea05f2652b0167093aa929c6bf3852b74a8b1ec8bea92a8864e0221d"
 
       def install
         bin.install "rtz"
@@ -30,8 +30,8 @@ class Rtz < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/runtimez-com/runtimez-cli/releases/download/v0.1.2/rtz_0.1.2_linux_amd64.tar.gz"
-        sha256 "b7e3bd4a31f612eda6cfd2e13feff9fd684af119730171292b0ed9f09bfdd69e"
+        url "https://github.com/runtimez-com/runtimez-cli/releases/download/v0.2.0/rtz_0.2.0_linux_amd64.tar.gz"
+        sha256 "782f681122cd0995d4c1246732077bf7bad9cc02340abd6fb90dc09b4e10f2e1"
 
         def install
           bin.install "rtz"
@@ -40,8 +40,8 @@ class Rtz < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/runtimez-com/runtimez-cli/releases/download/v0.1.2/rtz_0.1.2_linux_arm64.tar.gz"
-        sha256 "9a884bd334d8a355c0625f5b5aa87abb477c57b84184405f247e53ec870a79e5"
+        url "https://github.com/runtimez-com/runtimez-cli/releases/download/v0.2.0/rtz_0.2.0_linux_arm64.tar.gz"
+        sha256 "645bf183096b9a524aa40d08fb960801336d6d7f67e2bbf898455a5bfacc259e"
 
         def install
           bin.install "rtz"
